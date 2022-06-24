@@ -1,8 +1,8 @@
+import { iphoneimages } from "../components/ImageSequence.js"
 import React, { useRef, useEffect } from "react"
 import styled from "styled-components"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { iphoneimages } from "../components/ImageSequence.js"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -51,7 +51,7 @@ const VideoSequence = () => {
         pin: true,
         markers: true,
       },
-      onUpdate: () => console.log(iphone.frame),
+      onUpdate: () => updateImage,
     })
     // images[0].onload = function () {
     //   context.drawImage(images[0], 0, 0)
