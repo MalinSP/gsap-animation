@@ -48,7 +48,7 @@ const ProductSection = () => {
         pin: true,
         scrub: true,
         anticipatePin: 1,
-        markers: true,
+        // markers: true,
       },
     })
     splitTween

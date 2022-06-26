@@ -7,6 +7,7 @@ import {
   CrossRevealSection,
   ProductSection,
   VideoSequence,
+  Cursor,
 } from "../components/"
 import FaceOne from "../assets/images/faceOne.png"
 import LandscapeOne from "../assets/images/landscapeOne.png"
@@ -15,6 +16,7 @@ import LandscapeTwo from "../assets/images/LandscapeTwo.png"
 export default function Home() {
   return (
     <>
+      <Cursor />
       <Hero />
       <ProductSection />
       <ContentSection

@@ -7,6 +7,7 @@ import ContentSection from "./ContentSection"
 import CrossRevealSection from "./CrossRevealSection"
 import ProductSection from "./ProductSection"
 import VideoSequence from "./VideoSequence"
+import Cursor from "./Cursor"
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   CrossRevealSection,
   ProductSection,
   VideoSequence,
+  Cursor,
 }

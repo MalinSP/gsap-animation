@@ -1,12 +1,15 @@
 import React from "react"
 import styled from "styled-components"
+import { SplitText } from "../utils/SplitText"
 
-const ContentSection = ({ title, text }) => {
+function ContentSection(props) {
   return (
     <Wrapper>
       <div className="content-wrapper">
-        <h2>{title}</h2>
-        <h3>{text}</h3>
+        <h2>{props.title}</h2>
+        <h3>
+          <SplitText>{props.text}</SplitText>
+        </h3>
       </div>
     </Wrapper>
   )

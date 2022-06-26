@@ -38,30 +38,31 @@ const VideoSequence = () => {
       // console.log(img)
     }
     // console.log(images)
-
     gsap.to(iphone, {
       frame: frameCount - 1,
       snap: "frame",
-      ScrollTrigger: {
+      scrollTrigger: {
         trigger: videoTriggerRef.current,
         start: "center center",
         end: () => "+=" + videoTriggerRef.current.offsetHeight,
         scrub: 1,
-        anticipatePin: true,
         pin: true,
-        markers: true,
+        anticipatePin: true,
+        // markers: true,
       },
-      onUpdate: () => updateImage,
+      onUpdate: updateImage,
     })
-    // images[0].onload = function () {
-    //   context.drawImage(images[0], 0, 0)
-    // }
+
     images[0].onload = updateImage
 
     function updateImage(index) {
       context.clearRect(0, 0, canvas.width, canvas.height)
       context.drawImage(images[iphone.frame], 0, 0)
     }
+
+    // images[0].onload = function () {
+    //   context.drawImage(images[0], 0, 0)
+    // }
   }, [])
   return (
     <Wrapper ref={videoTriggerRef}>

@@ -10,6 +10,7 @@
 body {
   overflow-x: hidden;
   background-color: whitesmoke;
+  cursor: none;
 }
 img {
   display: block;
